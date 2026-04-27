@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flora</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Roboto:wght@400;600&display=swap"
+  rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+  />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo" href="./index.html">
+        <img src="./images/logo.svg" alt="Flora logo" class="logo-img">
+    </a>
+
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About Us</a></li>
+          <li><a class="nav-link" href="#flowers">Bestsellers</a></li>
+          <li><a class="nav-link" href="#services">Bouquets</a></li>
+          <li><a class="nav-link" href="#feedback">Feedback</a></li>
+          <li><a class="nav-link" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <a class="header-btn" href="#flowers">Explore Bouquets</a>
+
+      <button class="menu-open-btn" type="button" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu-container">
+        <button class="menu-close-btn" type="button" aria-label="Close menu" data-menu-close>
+          ✕
+        </button>
+
+        <ul class="mobile-menu-list">
+          <li><a class="mobile-menu-link" href="#about">About Us</a></li>
+          <li><a class="mobile-menu-link" href="#flowers">Bestsellers</a></li>
+          <li><a class="mobile-menu-link" href="#services">Bouquets</a></li>
+          <li><a class="mobile-menu-link" href="#feedback">Feedback</a></li>
+          <li><a class="mobile-menu-link" href="#contacts">Contacts</a></li>
+        </ul>
+        <a href="#bouquets" class="header-btn">Explore Bouquets</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Brighten Your Day with Our Stunning Bouquets</h1>
+          <p class="hero-text">
+            At Flora, we believe that every occasion deserves a beautiful bouquet. Our expertly crafted arrangements are designed to bring joy and elegance to your celebrations.
+          </p>
+          <a class="hero-btn" href="#flowers">Explore Our Bestsellers</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <img 
+                class="about-icon"
+                src="./images/flower_noback.svg"
+                alt=""
+            />
+            <h2 class="about-title">Our Passion for Floral Artistry</h2>
+            <p class="about-text">
+                At Flora, we believe that every bouquet tells a story. Our team meticulously crafts each arrangement, blending creativity with the freshest blooms to create stunning pieces for every occasion.
+            </p>
+        </div>
+        <img
+            class="about-img"
+            src="./images/female_florist.jpg"
+            alt="Female florist working with flowers"
+        />
+        </div>
+    </section>
+
+    <section class="flowers section" id="flowers">
+      <div class="container flowers-container">
+        <h2 class="flowers-heading">Top-Selling Bouquets</h2>
+
+    <ul class="flowers-list">
+      <li class="flowers-item">
+        <img src="./images/spring_elegance.jpg" alt="Spring Elegance bouquet" />
+        <h3 class="flowers-title">Spring Elegance</h3>
+        <p class="flowers-text">
+          A delicate blend of peonies, tulips, and roses — perfect for springtime gifting and bright smiles.
+        </p>
+        <p class="flowers-price">$35</p>
+      </li>
+
+      <li class="flowers-item">
+        <img src="./images/berry_chic.jpg" alt="Berry Chic bouquet" />
+        <h3 class="flowers-title">Berry Chic</h3>
+        <p class="flowers-text">
+          A stylish composition of roses, seasonal greenery, and vibrant berries — a bold and elegant floral statement.
+        </p>
+        <p class="flowers-price">$40</p>
+      </li>
+
+      <li class="flowers-item">
+        <img src="./images/lavender_dream.jpg" alt="Lavender Dream bouquet" />
+        <h3 class="flowers-title">Lavender Dream</h3>
+        <p class="flowers-text">
+          A rich bouquet with lavender, lisianthus, and roses — ideal for those who love deep hues and gentle fragrance.
+        </p>
+        <p class="flowers-price">$55</p>
+      </li>
+    </ul>
+
+    <div class="flowers-bottom">
+      <ul class="slider-dots">
+        <li class="slider-dot active"></li>
+        <li class="slider-dot"></li>
+        <li class="slider-dot"></li>
+        <li class="slider-dot"></li>
+        <li class="slider-dot"></li>
+      </ul>
+
+      <div class="slider-arrows">
+        <button class="slider-btn" type="button" aria-label="Previous slide">←</button>
+        <button class="slider-btn" type="button" aria-label="Next slide">→</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="bouquets section" id="services">
+  <div class="container bouquets-container">
+    <h2 class="bouquets-title">Bouquets</h2>
+    <p class="bouquets-subtitle">
+      Explore our stunning selection of fresh flower bouquets.
+    </p>
+
+    <ul class="bouquets-list">
+      <li class="bouquets-item">
+        <img src="./images/peach_meadow.jpg" alt="Peach Meadow bouquet">
+        <h3>Peach Meadow</h3>
+        <p>A soft and radiant arrangement of peach and blush roses with lush greenery in a straw basket.</p>
+        <span>$55</span>
+      </li>
+
+      <li class="bouquets-item">
+        <img src="./images/blush_romance.jpg" alt="Blush Romance bouquet">
+        <h3>Blush Romance</h3>
+        <p>A premium bouquet of deep pink and ivory roses, complemented by silver eucalyptus.</p>
+        <span>$34</span>
+      </li>
+
+      <li class="bouquets-item">
+        <img src="./images/pastel_garden.jpg" alt="Pastel Garden bouquet">
+        <h3>Pastel Garden</h3>
+        <p>A pastel-toned mix of spray roses and greenery in a woven basket — gentle and airy.</p>
+        <span>$40</span>
+      </li>
+
+      <li class="bouquets-item">
+        <img src="./images/tulip_charm.jpg" alt="Tulip Charm bouquet">
+        <h3>Tulip Charm</h3>
+        <p>A vivid bouquet of bright tulips and roses in a lavender box — cheerful and full of charm.</p>
+        <span>$61</span>
+      </li>
+
+      <li class="bouquets-item">
+        <img src="./images/berry_bloom.jpg" alt="Berry Bloom bouquet">
+        <h3>Berry Bloom</h3>
+        <p>A lush mix of rich pink, purple, and cream blooms with textured greens.</p>
+        <span>$32</span>
+      </li>
+
+      <li class="bouquets-item">
+        <img src="./images/sweet_whisper.jpg" alt="Sweet Whisper bouquet">
+        <h3>Sweet Whisper</h3>
+        <p>A charming spring bouquet with peonies, roses, and lilac-toned accents.</p>
+        <span>$40</span>
+      </li>
+
+      <li class="bouquets-item">
+        <img src="./images/field_joy.jpg" alt="Field Joy bouquet">
+        <h3>Field Joy</h3>
+        <p>A rustic hand-tied bouquet of sunflowers and daisies — perfect for brightening the day.</p>
+        <span>$49</span>
+      </li>
+
+      <li class="bouquets-item">
+        <img src="./images/soft_bloom.jpg" alt="Soft Bloom bouquet">
+        <h3>Soft Bloom</h3>
+        <p>A delicate bouquet of pink carnations and roses wrapped in satin paper.</p>
+        <span>$37</span>
+      </li>
+    </ul>
+
+    <button class="bouquets-btn" type="button">Show More</button>
+  </div>
+  </section>
+
+    <section class="feedback section" id="feedback">
+    <div class="container feedback-container">
+    <h2 class="feedback-title">What our clients says</h2>
+
+    <ul class="feedback-list">
+      <li class="feedback-item">
+        <p>"Flora made my anniversary unforgettable with their beautiful arrangement!"</p>
+        <h3>Emma T.</h3>
+      </li>
+
+      <li class="feedback-item">
+        <p>Absolutely stunning bouquet! It looked even better than the photo and arrived right on time.</p>
+        <h3>Daniel R.</h3>
+      </li>
+
+      <li class="feedback-item">
+        <p>The service was exceptional, and the flowers were fresh!</p>
+        <h3>Olivia M.</h3>
+      </li>
+    </ul>
+
+    <div class="feedback-arrows">
+      <button class="slider-btn" type="button" aria-label="Previous feedback">←</button>
+      <button class="slider-btn" type="button" aria-label="Next feedback">→</button>
+    </div>
+    </div>
+    </section>
+
+    <section class="contact section" id="contacts">
+    <div class="container contact-container">
+    <div class="contact-top">
+      <div class="contact-content">
+        <p class="contact-label">Connect</p>
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-text">
+          We’re here to assist you with all your floral needs and inquiries.
+        </p>
+      </div>
+
+      <address class="contact-address">
+        <div class="contact-item">
+          <img src="./images/phone.svg" class="contact-icon contact-icon-phone" />
+          <div>
+            <p class="contact-address-title">Phone</p>
+            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <img src="./images/map.svg" class="contact-icon contact-icon-map" />
+          <div>
+            <p class="contact-address-title">Store</p>
+            <p>456 Floral Ave, Sydney NSW 2000 AU</p>
+          </div>
+        </div>
+      </address>
+    </div>
+
+    <img
+      class="contact-img"
+      src="./images/florist_holding_flowers.jpg"
+      alt="Florist holding flowers"
+    />
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container footer-container">
+
+    <div class="footer-top">
+      <a href="./index.html" class="logo footer-logo">
+        <img src="./images/logo.svg" class="logo-img" alt="Flora">
+      </a>
+
+      <ul class="footer-nav">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#flowers">Bestsellers</a></li>
+        <li><a href="#services">Bouquets</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+
+      <div class="footer-social">
+        <a href="#">
+          <img src="./images/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#">
+          <img src="./images/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#">
+          <img src="./images/x.svg" alt="X">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <p class="footer-copy">© 2025 Flora. All rights reserved.</p>
+
+  </div>
+  </footer>
+
+  <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
